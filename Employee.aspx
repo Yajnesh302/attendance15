@@ -399,12 +399,13 @@
         .tl-contract-chip {
             display: inline-block;
             font-size: 0.72rem;
-            background: #e0e7ff;
-            color: #4338ca;
+            background: #e0e7ff !important;
+            color: #312e81 !important;
             border-radius: 4px;
-            padding: 2px 8px;
+            padding: 3px 8px;
             margin-top: 8px;
-            font-weight: 600;
+            font-weight: 700;
+            border: 1px solid #c7d2fe !important;
         }
         .tl-no-history {
             text-align: center;
@@ -561,6 +562,32 @@
         .btn-action-import {
             background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%) !important; /* Purple/Violet */
         }
+
+        /* Custom modal and panel classes for clean theme toggling */
+        .emp-id-box-custom {
+            background-color: #f8fafc !important;
+            border-color: #e2e8f0 !important;
+        }
+        .rejoin-box-custom {
+            background-color: #fff !important;
+            border-color: #e2e8f0 !important;
+        }
+        .modal-card-custom {
+            background-color: #fff !important;
+            border: 1px solid #e2e8f0 !important;
+        }
+        .modal-card-header-custom {
+            background-color: #fafbfc !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+        }
+        .adv-filters-panel-custom {
+            background-color: #f5f3ff !important;
+            border: 1.5px solid #c4b5fd !important;
+        }
+        .adv-filters-card-custom {
+            background-color: #fff !important;
+            border: 1px solid #e2e8f0 !important;
+        }
     </style>
 </asp:Content>
 
@@ -632,7 +659,7 @@
     </div>
 
     <!-- ADVANCED FILTERS PANEL -->
-    <div id="advancedFiltersPanel" style="display:none; background:#f5f3ff; border:1.5px solid #c4b5fd; border-radius:12px; padding:18px 20px; margin-bottom:12px;">
+    <div id="advancedFiltersPanel" class="adv-filters-panel-custom" style="display:none; border-radius:12px; padding:18px 20px; margin-bottom:12px;">
         <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;">
             <div style="font-weight:700; color:#4f46e5; font-size:0.92rem;"><i class="fas fa-sliders-h mr-2"></i>Advanced Filters</div>
             <div style="display:flex; gap:8px;">
@@ -643,14 +670,14 @@
         <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px;">
 
             <!-- Join Date Filter -->
-            <div style="background:#fff; border-radius:10px; padding:14px; border:1px solid #e2e8f0;">
+            <div class="adv-filters-card-custom" style="border-radius:10px; padding:14px;">
                 <div style="font-weight:700; font-size:0.82rem; color:#334155; margin-bottom:10px;"><i class="fas fa-calendar-alt mr-1" style="color:#4f46e5;"></i> Join Date</div>
                 <select id="advJoinMode" onchange="toggleJoinDateInputs(); applyAdvancedFilters();" style="width:100%; border-radius:6px; border:1px solid #cbd5e1; padding:5px 8px; font-size:0.82rem; color:#334155; margin-bottom:8px; background:#f8fafc;">
-                    <option value="">-- No Filter --</option>
-                    <option value="before">Before</option>
-                    <option value="after">After</option>
-                    <option value="between">Between</option>
-                    <option value="exact">On Exact Date</option>
+                     <option value="">-- No Filter --</option>
+                     <option value="before">Before</option>
+                     <option value="after">After</option>
+                     <option value="between">Between</option>
+                     <option value="exact">On Exact Date</option>
                 </select>
                 <div id="advJoinDate1Wrap" style="display:none; margin-bottom:6px;">
                     <label style="font-size:0.75rem; color:#64748b; font-weight:600;">Date</label>
@@ -663,7 +690,7 @@
             </div>
 
             <!-- Experience Filter -->
-            <div style="background:#fff; border-radius:10px; padding:14px; border:1px solid #e2e8f0;">
+            <div class="adv-filters-card-custom" style="border-radius:10px; padding:14px;">
                 <div style="font-weight:700; font-size:0.82rem; color:#334155; margin-bottom:10px;"><i class="fas fa-briefcase mr-1" style="color:#4f46e5;"></i> Experience (Years)</div>
                 <select id="advExpMode" onchange="toggleExpInputs(); applyAdvancedFilters();" style="width:100%; border-radius:6px; border:1px solid #cbd5e1; padding:5px 8px; font-size:0.82rem; color:#334155; margin-bottom:8px; background:#f8fafc;">
                     <option value="">-- No Filter --</option>
@@ -683,7 +710,7 @@
             </div>
 
             <!-- Qualification Filter -->
-            <div style="background:#fff; border-radius:10px; padding:14px; border:1px solid #e2e8f0;">
+            <div class="adv-filters-card-custom" style="border-radius:10px; padding:14px;">
                 <div style="font-weight:700; font-size:0.82rem; color:#334155; margin-bottom:10px;"><i class="fas fa-graduation-cap mr-1" style="color:#4f46e5;"></i> Qualification</div>
                 <input type="text" id="advQualText" placeholder="e.g. B.Tech, MBA, Diploma..." oninput="applyAdvancedFilters()"
                     style="width:100%; border-radius:6px; border:1px solid #cbd5e1; padding:6px 10px; font-size:0.82rem; color:#334155; margin-bottom:8px;">
@@ -691,7 +718,7 @@
             </div>
 
             <!-- Experience In Filter -->
-            <div style="background:#fff; border-radius:10px; padding:14px; border:1px solid #e2e8f0;">
+            <div class="adv-filters-card-custom" style="border-radius:10px; padding:14px;">
                 <div style="font-weight:700; font-size:0.82rem; color:#334155; margin-bottom:10px;"><i class="fas fa-tasks mr-1" style="color:#4f46e5;"></i> Experience In (keyword)</div>
                 <input type="text" id="advExpInText" placeholder="e.g. welding, manager, civil..." oninput="applyAdvancedFilters()"
                     style="width:100%; border-radius:6px; border:1px solid #cbd5e1; padding:6px 10px; font-size:0.82rem; color:#334155; margin-bottom:8px;">
@@ -784,7 +811,7 @@
                         <span aria-hidden="true" style="font-size: 1.5rem;">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body text-dark" style="padding: 24px; background-color: #fcfdfe;">
+                <div class="modal-body text-dark" style="padding: 24px;">
                     <div class="form-group mb-3">
                         <label class="font-weight-bold mb-1" style="font-size: 0.9rem; color: #475569;">Category *</label>
                         <asp:DropDownList ID="ddlBulkLeaveCategory" runat="server" CssClass="form-control select-custom w-100" style="font-weight: 600;"></asp:DropDownList>
@@ -810,7 +837,7 @@
                         <asp:TextBox ID="txtBulkLeaveRemarks" runat="server" CssClass="form-control form-input-custom" placeholder="e.g. Monthly leave credit" MaxLength="200" style="font-weight: 600;"></asp:TextBox>
                     </div>
                 </div>
-                <div class="modal-footer" style="padding: 16px 24px; background-color: #f8fafc; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; width: 100%;">
+                <div class="modal-footer" style="padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; width: 100%;">
                     <div>
                         <asp:Button ID="btnResetBulkLeave" runat="server" Text="Reset Balance to 0" CssClass="btn btn-danger font-weight-bold" OnClick="btnResetBulkLeave_Click" OnClientClick="return confirmResetBulkLeave(this.name);" style="border-radius: 8px; font-size: 0.9rem; padding: 8px 16px; background-color: #ef4444; border-color: #ef4444;" />
                     </div>
@@ -833,11 +860,11 @@
                         <span aria-hidden="true" style="font-size: 1.5rem;">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body text-dark" style="max-height: 75vh; overflow-y: auto; padding: 24px; background-color: #fcfdfe;">
+                <div class="modal-body text-dark" style="max-height: 75vh; overflow-y: auto; padding: 24px;">
                     <!-- Top System Identity Strip -->
                     <div class="row mb-4">
                         <div class="col-md-6 mb-3 mb-md-0">
-                            <div class="p-3 rounded-lg border d-flex align-items-center" style="height: 100%; background-color: #f8fafc; border-color: #e2e8f0; border-radius: 12px;">
+                            <div class="p-3 rounded-lg border d-flex align-items-center emp-id-box-custom" style="height: 100%; border-radius: 12px;">
                                 <div class="bg-indigo-light text-indigo rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 42px; height: 42px; background-color: #e0e7ff; color: #4f46e5; flex-shrink: 0; border-radius: 50%;">
                                     <i class="fas fa-id-badge" style="font-size: 1.25rem;"></i>
                                 </div>
@@ -852,7 +879,7 @@
                         </div>
                         
                         <div class="col-md-6">
-                            <div class="p-3 rounded-lg border d-flex align-items-center bg-white" style="height: 100%; border-color: #e2e8f0; border-radius: 12px; justify-content: flex-start;">
+                            <div class="p-3 rounded-lg border d-flex align-items-center rejoin-box-custom" style="height: 100%; border-radius: 12px; justify-content: flex-start;">
                                 <asp:CheckBox ID="chkIsRejoining" runat="server" onclick="toggleRejoiningSelection();" style="transform: scale(1.2); margin-right: 10px; cursor: pointer;" ClientIDMode="Static" />
                                 <label class="form-check-label font-weight-bold text-primary mb-0" for="chkIsRejoining" style="cursor: pointer; font-size: 0.88rem; user-select: none;">
                                     Is Rejoining Employee?
@@ -887,8 +914,8 @@
                     </div>
 
                     <!-- Employment Info Section Card -->
-                    <div class="card shadow-sm border-0 mb-4" style="border-radius: 12px; background-color: #fff; border: 1px solid #e2e8f0 !important; overflow: hidden;">
-                        <div class="card-header py-3" style="background-color: #fafbfc; border-bottom: 1px solid #e2e8f0;">
+                    <div class="card shadow-sm border-0 mb-4 modal-card-custom" style="border-radius: 12px; overflow: hidden;">
+                        <div class="card-header py-3 modal-card-header-custom">
                             <h6 class="mb-0 text-indigo font-weight-bold" style="color: #4f46e5; font-size: 0.92rem;">
                                 <i class="fas fa-briefcase mr-2"></i>Employment Info
                             </h6>
@@ -938,8 +965,8 @@
                     </div>
 
                     <!-- Contact & Verification Info Section Card -->
-                    <div class="card shadow-sm border-0 mb-2" style="border-radius: 12px; background-color: #fff; border: 1px solid #e2e8f0 !important; overflow: hidden;">
-                        <div class="card-header py-3" style="background-color: #fafbfc; border-bottom: 1px solid #e2e8f0;">
+                    <div class="card shadow-sm border-0 mb-2 modal-card-custom" style="border-radius: 12px; overflow: hidden;">
+                        <div class="card-header py-3 modal-card-header-custom">
                             <h6 class="mb-0 text-indigo font-weight-bold" style="color: #4f46e5; font-size: 0.92rem;">
                                 <i class="fas fa-id-card mr-2"></i>Contact & Verification Info
                             </h6>
@@ -970,7 +997,7 @@
                     </div>
 
                     <!-- PROFESSIONAL DETAILS CARD -->
-                    <div class="card shadow-sm mb-3" style="border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden;">
+                    <div class="card shadow-sm mb-3 modal-card-custom" style="border-radius: 12px; overflow: hidden;">
                         <div class="card-header" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); padding: 12px 16px; border-radius: 0;">
                             <h6 class="mb-0 text-white font-weight-bold" style="font-size: 0.9rem;">
                                 <i class="fas fa-briefcase mr-2"></i>Professional Details

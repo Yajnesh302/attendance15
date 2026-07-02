@@ -607,7 +607,7 @@
       "label": ".SaveWage()",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L325",
+      "source_location": "L307",
       "_origin": "ast",
       "id": "calculation_aspx_calculation_savewage",
       "community": 11,
@@ -617,7 +617,7 @@
       "label": ".SaveOverride()",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L341",
+      "source_location": "L323",
       "_origin": "ast",
       "id": "calculation_aspx_calculation_saveoverride",
       "community": 11,
@@ -627,7 +627,7 @@
       "label": ".DeleteOverride()",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L367",
+      "source_location": "L349",
       "_origin": "ast",
       "id": "calculation_aspx_calculation_deleteoverride",
       "community": 11,
@@ -637,7 +637,7 @@
       "label": ".GetCategories()",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L386",
+      "source_location": "L368",
       "_origin": "ast",
       "id": "calculation_aspx_calculation_getcategories",
       "community": 11,
@@ -647,7 +647,7 @@
       "label": ".GetDivisions()",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L399",
+      "source_location": "L381",
       "_origin": "ast",
       "id": "calculation_aspx_calculation_getdivisions",
       "community": 11,
@@ -657,7 +657,7 @@
       "label": ".GetContractsForMonth()",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L412",
+      "source_location": "L394",
       "_origin": "ast",
       "id": "calculation_aspx_calculation_getcontractsformonth",
       "community": 11,
@@ -667,7 +667,7 @@
       "label": "EngagementRange",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L474",
+      "source_location": "L456",
       "_origin": "ast",
       "id": "calculation_aspx_engagementrange",
       "community": 24,
@@ -677,7 +677,7 @@
       "label": "OverrideInfo",
       "file_type": "code",
       "source_file": "Calculation.aspx.cs",
-      "source_location": "L480",
+      "source_location": "L462",
       "_origin": "ast",
       "id": "calculation_aspx_overrideinfo",
       "community": 25,
@@ -2870,7 +2870,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "remarks_aspx",
-      "community": 1,
+      "community": 34,
       "norm_label": "remarks.aspx.cs"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "remarks_aspx_attendanceapp",
-      "community": 1,
+      "community": 34,
       "norm_label": "attendanceapp"
     },
     {
@@ -12760,7 +12760,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "js_angular_min_b",
-      "community": 97,
+      "community": 89,
       "norm_label": "$b()"
     },
     {
@@ -12770,7 +12770,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "js_angular_min_s",
-      "community": 97,
+      "community": 89,
       "norm_label": "s()"
     },
     {
@@ -12780,7 +12780,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "js_angular_min_xe",
-      "community": 97,
+      "community": 89,
       "norm_label": "xe()"
     },
     {
@@ -12800,7 +12800,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "js_angular_min_bc",
-      "community": 97,
+      "community": 89,
       "norm_label": "bc()"
     },
     {
@@ -12850,7 +12850,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "js_angular_min_a",
-      "community": 81,
+      "community": 108,
       "norm_label": "a()"
     },
     {
@@ -12910,7 +12910,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "js_angular_min_ha",
-      "community": 81,
+      "community": 89,
       "norm_label": "ha()"
     },
     {
@@ -12940,7 +12940,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "js_angular_min_ab",
-      "community": 97,
+      "community": 89,
       "norm_label": "ab()"
     },
     {
@@ -13010,7 +13010,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "js_angular_min_cb",
-      "community": 97,
+      "community": 89,
       "norm_label": "cb()"
     },
     {
@@ -13020,7 +13020,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "js_angular_min_ec",
-      "community": 97,
+      "community": 89,
       "norm_label": "ec()"
     },
     {
@@ -13030,7 +13030,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "js_angular_min_va",
-      "community": 97,
+      "community": 89,
       "norm_label": "va()"
     },
     {
@@ -13040,7 +13040,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "js_angular_min_db",
-      "community": 97,
+      "community": 89,
       "norm_label": "db()"
     },
     {
@@ -13060,7 +13060,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "js_angular_min_eb",
-      "community": 81,
+      "community": 108,
       "norm_label": "eb()"
     },
     {
@@ -13310,7 +13310,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "js_angular_min_jc",
-      "community": 81,
+      "community": 89,
       "norm_label": "jc()"
     },
     {
@@ -13400,7 +13400,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "js_angular_min_jd",
-      "community": 102,
+      "community": 89,
       "norm_label": "jd()"
     },
     {
@@ -13410,7 +13410,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "js_angular_min_kd",
-      "community": 102,
+      "community": 89,
       "norm_label": "kd()"
     },
     {
@@ -13420,7 +13420,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "js_angular_min_rc",
-      "community": 102,
+      "community": 89,
       "norm_label": "rc()"
     },
     {
@@ -13490,7 +13490,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "js_angular_min_wg",
-      "community": 81,
+      "community": 108,
       "norm_label": "wg()"
     },
     {
@@ -13500,7 +13500,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "js_angular_min_xg",
-      "community": 97,
+      "community": 89,
       "norm_label": "xg()"
     },
     {
@@ -13520,7 +13520,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "js_angular_min_ng",
-      "community": 97,
+      "community": 89,
       "norm_label": "ng()"
     },
     {
@@ -13530,7 +13530,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "js_angular_min_ng_get",
-      "community": 97,
+      "community": 89,
       "norm_label": ".$get()"
     },
     {
@@ -13970,7 +13970,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "js_angular_min_sf",
-      "community": 96,
+      "community": 108,
       "norm_label": "sf()"
     },
     {
@@ -13980,7 +13980,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "js_angular_min_sf_useapplyasync",
-      "community": 96,
+      "community": 108,
       "norm_label": ".useapplyasync()"
     },
     {
@@ -14010,7 +14010,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "js_angular_min_vf",
-      "community": 73,
+      "community": 108,
       "norm_label": "vf()"
     },
     {
@@ -14020,7 +14020,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "js_angular_min_pg",
-      "community": 73,
+      "community": 108,
       "norm_label": "pg()"
     },
     {
@@ -14230,7 +14230,7 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "js_angular_min_fd",
-      "community": 81,
+      "community": 108,
       "norm_label": "fd()"
     },
     {
@@ -14400,7 +14400,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "js_angular_min_ag",
-      "community": 97,
+      "community": 89,
       "norm_label": "ag()"
     },
     {
@@ -14410,7 +14410,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "js_angular_min_ag_digestttl",
-      "community": 97,
+      "community": 89,
       "norm_label": ".digestttl()"
     },
     {
@@ -14560,7 +14560,7 @@
       "source_location": "L173",
       "_origin": "ast",
       "id": "js_angular_min_og",
-      "community": 96,
+      "community": 108,
       "norm_label": "og()"
     },
     {
@@ -14580,7 +14580,7 @@
       "source_location": "L174",
       "_origin": "ast",
       "id": "js_angular_min_rd",
-      "community": 81,
+      "community": 108,
       "norm_label": "rd()"
     },
     {
@@ -14680,7 +14680,7 @@
       "source_location": "L184",
       "_origin": "ast",
       "id": "js_angular_min_ch",
-      "community": 81,
+      "community": 108,
       "norm_label": "ch()"
     },
     {
@@ -14990,7 +14990,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_o",
-      "community": 85,
+      "community": 129,
       "norm_label": "o()"
     },
     {
@@ -15010,7 +15010,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_h",
-      "community": 85,
+      "community": 129,
       "norm_label": "h()"
     },
     {
@@ -15290,7 +15290,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_se",
-      "community": 129,
+      "community": 85,
       "norm_label": "se()"
     },
     {
@@ -15300,7 +15300,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_be",
-      "community": 129,
+      "community": 85,
       "norm_label": "be()"
     },
     {
@@ -15520,7 +15520,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_at",
-      "community": 69,
+      "community": 109,
       "norm_label": "at()"
     },
     {
@@ -15530,7 +15530,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_st",
-      "community": 69,
+      "community": 109,
       "norm_label": "st()"
     },
     {
@@ -15620,7 +15620,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_gt",
-      "community": 69,
+      "community": 109,
       "norm_label": "gt()"
     },
     {
@@ -15760,7 +15760,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_hn",
-      "community": 109,
+      "community": 85,
       "norm_label": "hn()"
     },
     {
@@ -15780,7 +15780,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_mn",
-      "community": 107,
+      "community": 109,
       "norm_label": "mn()"
     },
     {
@@ -15800,7 +15800,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_en",
-      "community": 109,
+      "community": 85,
       "norm_label": "en()"
     },
     {
@@ -15810,7 +15810,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_sn",
-      "community": 109,
+      "community": 85,
       "norm_label": "sn()"
     },
     {
@@ -15880,7 +15880,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_an",
-      "community": 109,
+      "community": 85,
       "norm_label": "an()"
     },
     {
@@ -16060,7 +16060,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_pr",
-      "community": 107,
+      "community": 109,
       "norm_label": "pr()"
     },
     {
@@ -16400,7 +16400,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_ri",
-      "community": 69,
+      "community": 109,
       "norm_label": "ri()"
     },
     {
@@ -16550,7 +16550,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_wi",
-      "community": 69,
+      "community": 109,
       "norm_label": "wi()"
     },
     {
@@ -16650,7 +16650,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_sa",
-      "community": 107,
+      "community": 109,
       "norm_label": "sa()"
     },
     {
@@ -16820,7 +16820,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "js_main_min_ya",
-      "community": 85,
+      "community": 129,
       "norm_label": "ya()"
     },
     {
@@ -17740,7 +17740,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "userremarks_aspx",
-      "community": 1,
+      "community": 34,
       "norm_label": "userremarks.aspx.cs"
     },
     {
@@ -17750,7 +17750,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "userremarks_aspx_attendanceapp",
-      "community": 1,
+      "community": 34,
       "norm_label": "attendanceapp"
     },
     {
@@ -19837,7 +19837,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 34,
       "norm_label": "attendanceremarks",
       "id": "example_structure_attendanceremarks"
     },
@@ -69490,5 +69490,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "40e9ad6c0726a28f5a6f147f5089541c75ec540c"
+  "built_at_commit": "088d323476f2ea8437c775490ae4ba72d83f4b3b"
 }

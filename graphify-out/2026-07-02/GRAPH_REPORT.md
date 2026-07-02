@@ -1,16 +1,16 @@
-# Graph Report - attendence  (2026-07-02)
+# Graph Report - attendence  (2026-06-30)
 
 ## Corpus Check
-- 97 files · ~1,209,120 words
+- 97 files · ~1,209,039 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2251 nodes · 4396 edges · 156 communities (131 shown, 25 thin omitted)
+- 2251 nodes · 4396 edges · 157 communities (132 shown, 25 thin omitted)
 - Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 256 edges (avg confidence: 0.81)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `40e9ad6c`
+- Built from commit: `088d3234`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -89,6 +89,7 @@
 - [[_COMMUNITY_Community 86|Community 86]]
 - [[_COMMUNITY_Community 87|Community 87]]
 - [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
@@ -169,15 +170,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (156 total, 25 thin omitted)
+## Communities (157 total, 25 thin omitted)
 
 ### Community 0 - "Employee Management Part 1"
 Cohesion: 0.06
 Nodes (36): Employee.AutoEnrollActiveContract, Employee.BindGrid, Employee.BindResignedEmployees, Employee.btnAddEmployee_Click, Employee.btnCancelEdit_Click, Employee.btnConfirmDelete_Click, Employee.btnHiddenEditTrigger_Click, Employee.btnImport_Click (+28 more)
 
 ### Community 1 - "Employee Management Part 2"
-Cohesion: 0.14
-Nodes (18): AttendanceApp, ActionLog, AdminActionLog, AppUsers, Attendance_Audit_Log, AttendanceRemarks, CalculationWages, Divisions (+10 more)
+Cohesion: 0.17
+Nodes (15): AttendanceApp, ActionLog, AdminActionLog, AppUsers, Attendance_Audit_Log, CalculationWages, Divisions, empdetails (+7 more)
 
 ### Community 2 - "Graphify System Documentation Part 1"
 Cohesion: 0.07
@@ -296,8 +297,8 @@ Cohesion: 0.25
 Nodes (7): AttendanceApp, Button, FileUpload, HiddenField, PlaceHolder, Repeater, Notices
 
 ### Community 34 - "Master Modules Part 2"
-Cohesion: 0.25
-Nodes (6): SiteMaster.btnLogout_Click, SiteMaster.Page_Load, MasterPage, AttendanceApp, EventArgs, SiteMaster
+Cohesion: 0.15
+Nodes (9): SiteMaster.btnLogout_Click, SiteMaster.Page_Load, AttendanceRemarks, MasterPage, AttendanceApp, AttendanceApp, EventArgs, SiteMaster (+1 more)
 
 ### Community 35 - "User Authentication & Session"
 Cohesion: 0.29
@@ -329,7 +330,7 @@ Nodes (6): AttendanceApp, EventArgs, WebMethod, Documents, EngagementRange, Over
 
 ### Community 69 - "Community 69"
 Cohesion: 0.03
-Nodes (24): _(), at(), co(), fo(), go(), gt(), He(), ho() (+16 more)
+Nodes (19): _(), co(), fo(), go(), He(), ho(), ja(), jt() (+11 more)
 
 ### Community 70 - "Community 70"
 Cohesion: 0.07
@@ -345,7 +346,7 @@ Nodes (44): $(), a(), Ac(), Al(), bc(), bl(), c(), cl() (+36 more)
 
 ### Community 73 - "Community 73"
 Cohesion: 0.05
-Nodes (26): Bf(), De(), ea(), Ee(), fe(), gd(), Ge(), hd() (+18 more)
+Nodes (24): Bf(), De(), ea(), Ee(), fe(), gd(), Ge(), hd() (+16 more)
 
 ### Community 74 - "Community 74"
 Cohesion: 0.10
@@ -376,8 +377,8 @@ Cohesion: 0.15
 Nodes (3): Ne, trigger(), W
 
 ### Community 81 - "Community 81"
-Cohesion: 0.10
-Nodes (32): A(), bh(), cc(), Cd(), ch(), dh(), eb(), fa() (+24 more)
+Cohesion: 0.13
+Nodes (24): bh(), cc(), Cd(), dh(), fa(), fc(), Fg(), gc() (+16 more)
 
 ### Community 82 - "Community 82"
 Cohesion: 0.19
@@ -393,7 +394,7 @@ Nodes (8): ac(), Da(), Dd(), Ed(), Kb(), ya(), yc(), Yf()
 
 ### Community 85 - "Community 85"
 Cohesion: 0.10
-Nodes (29): Ao(), E(), Fe(), Ge(), h(), Ia(), ir(), jo() (+21 more)
+Nodes (32): An(), Ao(), be(), E(), En(), Fe(), Ge(), hn() (+24 more)
 
 ### Community 86 - "Community 86"
 Cohesion: 0.11
@@ -402,6 +403,10 @@ Nodes (18): _arrayWithHoles(), asFoundIcon(), _classCallCheck(), _createClass(),
 ### Community 88 - "Community 88"
 Cohesion: 0.11
 Nodes (18): _arrayWithHoles(), asFoundIcon(), _classCallCheck(), _createClass(), _defineProperties(), findIconDefinition(), iconFromMapping(), invokeResolver() (+10 more)
+
+### Community 89 - "Community 89"
+Cohesion: 0.15
+Nodes (17): ab(), ag(), $b(), bc(), cb(), db(), ec(), ha() (+9 more)
 
 ### Community 90 - "Community 90"
 Cohesion: 0.12
@@ -424,12 +429,12 @@ Cohesion: 0.24
 Nodes (16): AttendanceApp, EngagementRange, AttendanceApp, AttendanceApp, AttendanceApp, Attendance, CalculationOverrides, Categories (+8 more)
 
 ### Community 96 - "Community 96"
-Cohesion: 0.09
-Nodes (15): Ae(), bg(), cg(), ie(), nd(), Og(), Pf(), Qe() (+7 more)
+Cohesion: 0.10
+Nodes (13): Ae(), bg(), cg(), ie(), nd(), Pf(), Qe(), Rf() (+5 more)
 
 ### Community 97 - "Community 97"
-Cohesion: 0.10
-Nodes (21): ab(), Ad(), ag(), $b(), bc(), cb(), db(), ec() (+13 more)
+Cohesion: 0.17
+Nodes (9): Ad(), Eg(), F(), Lc(), Me(), Oe(), pd(), T() (+1 more)
 
 ### Community 98 - "Community 98"
 Cohesion: 0.17
@@ -448,8 +453,8 @@ Cohesion: 0.19
 Nodes (17): asyncCall(), disableObservation(), enableObservation(), findIcon(), fulfill(), generateMutation(), generateSvgReplacementMutation(), getMutator() (+9 more)
 
 ### Community 102 - "Community 102"
-Cohesion: 0.12
-Nodes (23): ba(), Bd(), Ce(), Dg(), E(), Fb(), g(), H() (+15 more)
+Cohesion: 0.14
+Nodes (20): ba(), Bd(), Ce(), Dg(), E(), Fb(), g(), H() (+12 more)
 
 ### Community 103 - "Community 103"
 Cohesion: 0.12
@@ -461,15 +466,15 @@ Nodes (17): asyncCall(), disableObservation(), enableObservation(), findIcon(), 
 
 ### Community 107 - "Community 107"
 Cohesion: 0.07
-Nodes (37): Lf(), Ai(), au(), br(), bs(), cr(), Ds(), ei() (+29 more)
+Nodes (34): Lf(), Ai(), au(), br(), bs(), cr(), Ds(), ei() (+26 more)
 
 ### Community 108 - "Community 108"
-Cohesion: 0.33
-Nodes (8): Aa(), C(), Je(), La(), lb(), Rb(), Tc(), Wc()
+Cohesion: 0.14
+Nodes (18): A(), Aa(), C(), ch(), eb(), Fd(), Je(), La() (+10 more)
 
 ### Community 109 - "Community 109"
-Cohesion: 0.16
-Nodes (20): An(), ci(), di(), En(), fi(), gr(), gu(), hi() (+12 more)
+Cohesion: 0.11
+Nodes (24): at(), ci(), di(), fi(), gr(), gt(), gu(), hi() (+16 more)
 
 ### Community 110 - "Community 110"
 Cohesion: 0.20
@@ -536,8 +541,8 @@ Cohesion: 0.29
 Nodes (8): apiObject(), css(), ensureCss(), htmlEscape(), insertCss(), joinAttributes(), replace(), toHtml()
 
 ### Community 129 - "Community 129"
-Cohesion: 0.19
-Nodes (14): be(), C(), D(), f(), g(), I(), ie(), L() (+6 more)
+Cohesion: 0.17
+Nodes (15): C(), D(), f(), g(), h(), I(), ie(), L() (+7 more)
 
 ### Community 130 - "Community 130"
 Cohesion: 0.29
@@ -587,7 +592,7 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.192) - this node is a cross-community bridge._
 - **Why does `_()` connect `Community 69` to `Community 129`, `Community 70`, `Community 107`, `Community 109`, `Community 77`, `Community 113`, `Community 114`, `Community 83`, `Community 81`, `Community 85`, `Community 124`?**
   _High betweenness centrality (0.173) - this node is a cross-community bridge._
-- **Why does `y()` connect `Community 81` to `Community 97`, `Community 69`, `Community 102`, `Community 71`, `Community 75`, `Community 108`, `Community 77`, `Community 90`, `Community 94`?**
+- **Why does `y()` connect `Community 81` to `Community 69`, `Community 102`, `Community 71`, `Community 75`, `Community 108`, `Community 77`, `Community 89`, `Community 90`, `Community 94`?**
   _High betweenness centrality (0.100) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `_()` (e.g. with `pe()` and `make_xlsx_lib()`) actually correct?**
   _`_()` has 2 INFERRED edges - model-reasoned connections that need verification._

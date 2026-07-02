@@ -245,12 +245,13 @@
         .tl-contract-chip {
             display: inline-block;
             font-size: 0.72rem;
-            background: #e0e7ff;
-            color: #4338ca;
+            background: #e0e7ff !important;
+            color: #312e81 !important;
             border-radius: 4px;
-            padding: 2px 8px;
+            padding: 3px 8px;
             margin-top: 8px;
-            font-weight: 600;
+            font-weight: 700;
+            border: 1px solid #c7d2fe !important;
         }
         .tl-no-history {
             text-align: center;

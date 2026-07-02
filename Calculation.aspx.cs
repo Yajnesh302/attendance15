@@ -72,7 +72,8 @@ namespace AttendanceApp
             // 2. Get Employees from EmployeeEngagements joined with Employees active in the month
             string eQ = @"
                 SELECT ee.Id AS EngagementId, ee.EmpID AS MasterId, NVL(ee.EmployeeId, e.ID) AS ID, e.Name, 
-                       ee.Department, ee.Category, ee.StartDate, ee.EndDate, cp.EndDate AS CpEndDate
+                       ee.Department, ee.Category, ee.StartDate, ee.EndDate, cp.EndDate AS CpEndDate,
+                       e.ResignDate
                 FROM EmployeeEngagements ee
                 JOIN Employees e ON ee.EmpID = e.MasterId
                 JOIN ContractPeriods cp ON ee.ContractPeriodId = cp.Id
@@ -200,6 +201,7 @@ namespace AttendanceApp
                 DateTime eeStartDate = Convert.ToDateTime(dr["StartDate"]);
                 DateTime? eeEndDate = dr["EndDate"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(dr["EndDate"]) : null;
                 DateTime? cpEndDate = dr["CpEndDate"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(dr["CpEndDate"]) : null;
+                DateTime? resignDate = dr["ResignDate"] != DBNull.Value ? (DateTime?)Convert.ToDateTime(dr["ResignDate"]) : null;
                 
                 DateTime? effectiveEndDate = null;
                 if (eeEndDate.HasValue && cpEndDate.HasValue)
@@ -223,7 +225,23 @@ namespace AttendanceApp
                     DateTime currDate = new DateTime(year, month + 1, d);
 
                     // Boundary check for this specific stint
-                    if (currDate < eeStartDate.Date || (effectiveEndDate.HasValue && currDate > effectiveEndDate.Value.Date))
+                    bool isOutOfBounds = (currDate < eeStartDate.Date || (effectiveEndDate.HasValue && currDate > effectiveEndDate.Value.Date));
+
+                    // Special Friday resignation exception for Saturday:
+                    // If the day is a Saturday, and the employee resigned on the preceding Friday, Saturday is treated as in-bounds.
+                    if (isOutOfBounds && currDate.DayOfWeek == DayOfWeek.Saturday)
+                    {
+                        DateTime prevFriday = currDate.AddDays(-1);
+                        if (resignDate.HasValue && resignDate.Value.Date == prevFriday.Date && resignDate.Value.DayOfWeek == DayOfWeek.Friday)
+                        {
+                            if (prevFriday >= eeStartDate.Date && (!effectiveEndDate.HasValue || prevFriday <= effectiveEndDate.Value.Date))
+                            {
+                                isOutOfBounds = false;
+                            }
+                        }
+                    }
+
+                    if (isOutOfBounds)
                     {
                         continue;
                     }

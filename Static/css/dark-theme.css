@@ -1278,5 +1278,204 @@ html.theme-dark .nav-tabs .nav-link:hover {
     border-color: #2d3348 #2d3348 #2d3348 !important;
 }
 
+/* Employee History Timeline overrides in Dark Mode */
+html.theme-dark .history-modal .modal-content {
+    background-color: #1a1d27 !important;
+    color: #e2e8f0 !important;
+    border: 1px solid #2d3348 !important;
+}
+
+html.theme-dark .history-modal .modal-header {
+    border-bottom: 1px solid #2d3348 !important;
+}
+
+html.theme-dark .history-modal .modal-footer {
+    border-top: 1px solid #2d3348 !important;
+}
+
+html.theme-dark .history-modal .modal-body.text-dark {
+    color: #cbd5e1 !important; /* Force light gray text color instead of text-dark */
+}
+
+html.theme-dark .timeline::before {
+    background: linear-gradient(to bottom, #4f46e5, #312e81) !important;
+}
+
+html.theme-dark .tl-body {
+    background: #1e2233 !important;
+    border-color: #2d3348 !important;
+    color: #cbd5e1 !important;
+}
+
+html.theme-dark .tl-kv .v {
+    color: #f1f5f9 !important;
+}
+
+html.theme-dark .tl-no-history {
+    color: #94a3b8 !important;
+}
+
+html.theme-dark .tl-dot-icon {
+    border-color: #1a1d27 !important; /* matches the modal bg */
+}
+
+html.theme-dark .tl-contract-chip {
+    background: #20283e !important;
+    color: #60a5fa !important;
+    border: 1px solid #3b82f6 !important;
+}
+
+html.theme-dark .tl-contract-chip.chip-no-contract {
+    background: #3c1e22 !important;
+    color: #fca5a5 !important;
+    border-color: #7f1d1d !important;
+}
+
+html.theme-dark .tl-event-label.ev-join { background-color: #064e3b !important; border-color: #047857 !important; color: #a7f3d0 !important; }
+html.theme-dark .tl-event-label.ev-continue { background-color: #1e1b4b !important; border-color: #312e81 !important; color: #c7d2fe !important; }
+html.theme-dark .tl-event-label.ev-upgrade { background-color: #0c4a6e !important; border-color: #0369a1 !important; color: #bae6fd !important; }
+html.theme-dark .tl-event-label.ev-downgrade { background-color: #78350f !important; border-color: #b45309 !important; color: #fde68a !important; }
+html.theme-dark .tl-event-label.ev-end { background-color: #7f1d1d !important; border-color: #b91c1c !important; color: #fecaca !important; }
+html.theme-dark .tl-event-label.ev-active { background-color: #064e3b !important; border-color: #047857 !important; color: #a7f3d0 !important; }
+html.theme-dark .tl-event-label.ev-transfer { background-color: #4c1d95 !important; border-color: #6d28d9 !important; color: #e9d5ff !important; }
+html.theme-dark .tl-event-label.ev-no-contract { background-color: #7f1d1d !important; border-color: #b91c1c !important; color: #fecaca !important; }
+html.theme-dark .tl-event-label.ev-current-downgrade { background-color: #78350f !important; border-color: #b45309 !important; color: #fde68a !important; }
+html.theme-dark .tl-event-label.ev-current-upgrade { background-color: #0c4a6e !important; border-color: #0369a1 !important; color: #bae6fd !important; }
+html.theme-dark .tl-event-label.ev-current-transfer { background-color: #4c1d95 !important; border-color: #6d28d9 !important; color: #e9d5ff !important; }
+
+/* Employee Delete Popup modal overrides */
+html.theme-dark #deleteModal .modal-content {
+    background-color: #1a1d27 !important;
+    border: 1px solid #2d3348 !important;
+    color: #e2e8f0 !important;
+}
+html.theme-dark #deleteModal .modal-body {
+    background-color: #1a1d27 !important;
+    color: #cbd5e1 !important;
+}
+html.theme-dark #deleteModal .modal-footer {
+    background-color: #1a1d27 !important;
+    border-top-color: #2d3348 !important;
+}
+html.theme-dark #deleteModal label {
+    color: #cbd5e1 !important;
+}
+html.theme-dark #deleteModal .alert-danger {
+    background-color: rgba(239, 68, 68, 0.15) !important;
+    border: 1px solid rgba(239, 68, 68, 0.4) !important;
+    color: #fca5a5 !important;
+}
+html.theme-dark #btnDeleteDropdown,
+html.theme-dark #btnRejoinDropdown {
+    background-color: #1e2233 !important;
+    border-color: #2d3348 !important;
+    color: #f1f5f9 !important;
+}
+html.theme-dark #deleteDropdownItems,
+html.theme-dark #rejoinDropdownItems {
+    background-color: #1a1d27 !important;
+    border-color: #2d3348 !important;
+}
+html.theme-dark #deleteDropdownItems .delete-item-btn,
+html.theme-dark #rejoinDropdownItems .rejoin-item-btn,
+html.theme-dark #rejoinDropdownItems .dropdown-item {
+    color: #cbd5e1 !important;
+}
+html.theme-dark #deleteDropdownItems .delete-item-btn:hover,
+html.theme-dark #rejoinDropdownItems .rejoin-item-btn:hover {
+    background-color: #252a3a !important;
+    color: #f1f5f9 !important;
+}
+
+/* Bulk Add Leave Balance modal overrides */
+html.theme-dark #bulkLeaveModal .modal-content {
+    background-color: #1a1d27 !important;
+    border: 1px solid #2d3348 !important;
+    color: #e2e8f0 !important;
+}
+html.theme-dark #bulkLeaveModal .modal-body {
+    background-color: #1a1d27 !important;
+    color: #cbd5e1 !important;
+}
+html.theme-dark #bulkLeaveModal .modal-footer {
+    background-color: #1a1d27 !important;
+    border-top-color: #2d3348 !important;
+}
+html.theme-dark #bulkLeaveModal label {
+    color: #cbd5e1 !important;
+}
+
+/* Add New Employee modal overrides */
+html.theme-dark #employeeModal .modal-content {
+    background-color: #1a1d27 !important;
+    border: 1px solid #2d3348 !important;
+    color: #e2e8f0 !important;
+}
+html.theme-dark #employeeModal .modal-body {
+    background-color: #1a1d27 !important;
+    color: #cbd5e1 !important;
+}
+html.theme-dark #employeeModal .modal-footer {
+    background-color: #1a1d27 !important;
+    border-top-color: #2d3348 !important;
+}
+html.theme-dark #employeeModal label {
+    color: #cbd5e1 !important;
+}
+html.theme-dark #employeeModal .modal-body .row .col-md-6 > div {
+    background-color: #1e2233 !important;
+    border-color: #2d3348 !important;
+    color: #cbd5e1 !important;
+}
+html.theme-dark #employeeModal .modal-body #displayMasterID {
+    color: #f1f5f9 !important;
+}
+html.theme-dark #employeeModal .modal-body .card {
+    background-color: #1e2233 !important;
+    border: 1px solid #2d3348 !important;
+}
+html.theme-dark #employeeModal .modal-body .card-header {
+    background-color: #252a3a !important;
+    border-bottom: 1px solid #2d3348 !important;
+}
+html.theme-dark #employeeModal .modal-body .card-header h6 {
+    color: #818cf8 !important;
+}
+html.theme-dark #divRejoiningSelect {
+    background-color: #1e2233 !important;
+    border-color: #3b82f6 !important;
+}
+
+/* Advanced Filters Panel overrides */
+html.theme-dark #advancedFiltersPanel {
+    background-color: #161922 !important;
+    border: 1.5px solid #312e81 !important;
+    color: #cbd5e1 !important;
+}
+html.theme-dark #advancedFiltersPanel div[style*="color:#4f46e5"],
+html.theme-dark #advancedFiltersPanel div[style*="color: #4f46e5"] {
+    color: #818cf8 !important;
+}
+html.theme-dark #advancedFiltersPanel select,
+html.theme-dark #advancedFiltersPanel input {
+    background-color: #1a1d27 !important;
+    border-color: #2d3348 !important;
+    color: #f1f5f9 !important;
+}
+html.theme-dark #advancedFiltersPanel div[style*="background:#fff"],
+html.theme-dark #advancedFiltersPanel div[style*="background: #fff"] {
+    background-color: #1e2233 !important;
+    border: 1px solid #2d3348 !important;
+}
+html.theme-dark #advancedFiltersPanel div[style*="color:#334155"],
+html.theme-dark #advancedFiltersPanel div[style*="color: #334155"] {
+    color: #cbd5e1 !important;
+}
+html.theme-dark #advancedFiltersPanel button[onclick*="clearAdvancedFilters"] {
+    background-color: #252a3a !important;
+    border-color: #2d3348 !important;
+    color: #cbd5e1 !important;
+}
+
 
 

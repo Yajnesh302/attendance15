@@ -12,7 +12,7 @@
     <link href="Static/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
     <!-- Custom styles for this template-->
     <link href="Static/css/sb-admin-2.min.css" rel="stylesheet" />
-    <link href="Static/css/dark-theme.css" rel="stylesheet" />
+    <link href="Static/css/dark-theme.css?v=1.4.0" rel="stylesheet" />
 
     <style>
         /* Tour Spotlight Spotlight styles */
